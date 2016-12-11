@@ -1,7 +1,8 @@
 import React from 'react'
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
-import './login.css';
 const FormItem = Form.Item;
+import 'antd/dist/antd.css';
+import './login.css';
 
 const Login = Form.create()(React.createClass({
   handleSubmit(e) {
