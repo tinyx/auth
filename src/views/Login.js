@@ -29,7 +29,7 @@ const Login = Form.create()(React.createClass({
           if(response.token) {
             let token = response.token;
             // set the cookie
-            document.cookie = "jwt_token=" + token;
+            document.cookie = 'jwt_token=' + token + ';domain=.crabfactory.net';
 
             if(redirectUrl) {
               // perform redirect
