@@ -35,8 +35,14 @@ const Register = Form.create()(React.createClass({
         .then(response => {
           if(response.token) {
             let token = response.token;
+            var expires = new Date();
+            // add one day
+            expires.setDate(expires.getDate() + 1);
             // set the cookie
-            document.cookie = "jwt_token=" + token;
+            document.cookie = 'jwt_token=' + token +
+            ';expires=' + expires.toUTCString() +
+            ';path=/' +
+            ';domain=.crabfactory.net';
 
             if(redirectUrl) {
               // perform redirect
