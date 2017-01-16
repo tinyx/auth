@@ -61,6 +61,8 @@ const Login = Form.create()(React.createClass({
     const { getFieldDecorator } = this.props.form;
     return (
       <Form onSubmit={this.handleSubmit} className="login-form">
+        <h1>Crabfactory</h1>
+        <p>Login to your account</p>
         <FormItem>
           {getFieldDecorator('userName', {
             rules: [{ required: true, message: 'Please input your username!' }],

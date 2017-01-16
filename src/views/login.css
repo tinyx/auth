@@ -11,6 +11,15 @@ body {
   background: #fff;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
 }
+.login-form h1 {
+  font-size: 36px;
+  text-align: center;
+  line-height: 36px;
+}
+.login-form p {
+  margin: 15px 0;
+  text-align: center;
+}
 .login-form-forgot {
   float: right;
 }
