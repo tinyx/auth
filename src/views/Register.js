@@ -18,7 +18,7 @@ const Register = Form.create()(React.createClass({
     }
     this.props.form.validateFieldsAndScroll((err, values) => {
       if (!err) {
-        fetch('http://crabfactory.net/api-token-register/', {
+        fetch('http://yitao.io/api-token-register/', {
           method: 'post',
           headers: {
             'Accept': 'application/json',
@@ -42,7 +42,7 @@ const Register = Form.create()(React.createClass({
             document.cookie = 'jwt_token=' + token +
             ';expires=' + expires.toUTCString() +
             ';path=/' +
-            ';domain=.crabfactory.net';
+            ';domain=.yitao.io';
 
             if(redirectUrl) {
               // perform redirect
