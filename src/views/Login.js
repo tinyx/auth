@@ -16,7 +16,7 @@ const Login = Form.create()(
       }
       this.props.form.validateFields((err, values) => {
         if (!err) {
-          fetch("http://localhost:8000/api-token-auth/", {
+          fetch("http://yitao.io/api-token-auth/", {
             method: "post",
             headers: {
               Accept: "application/json",
